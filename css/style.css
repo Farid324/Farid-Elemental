@@ -11,6 +11,7 @@
 body{
     padding:0;
     margin:0;
+    font-family: var(--poppins);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -27,4 +28,114 @@ li{
 
 ul,ol{
     padding: 0 !important;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+
+.logo img
+{
+    width: 63px;
+}
+
+.menu ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu li
+{
+    margin-right:65px;
+}
+
+.menu li:last-child
+{
+    margin-right: 0;
+}
+
+.menu a
+{
+    color: var(--plomo);
+
+    font-size: 16px; /*Tamaño de fuente*/
+    text-transform: capitalize; /*capitalize = para que la primera letra sea mayuscula*/
+}
+
+.menu a:hover
+{
+    color: black;
+}
+
+/*Fin header*/
+
+main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.main-description
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 657px; 
+}
+.main-description h3
+{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--colorPrimario);
+}
+.main-description h1
+{
+    font-size: 85px;
+    font-weight: 600;
+}
+.main-description p
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--plomo);
+}
+
+.main-botones
+{
+    width: 411px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.main-botones a:first-child
+{
+    background-color: var(--colorPrimario);
+    padding: 16px 24px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: var(--blanco);
+}
+
+.main-botones a:last-child
+{
+    background-color:transparent;
+    padding: 16px 24px;
+    font-size: 20px;
+    border: 2px solid var(--colorPrimario);
+    border-radius: 5px;
+    color: var(--colorPrimario);
+}
+
+.main-image img
+{
+    width: 623px;
 }
