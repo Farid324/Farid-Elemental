@@ -28,6 +28,7 @@ li{
 
 ul,ol{
     padding: 0 !important;
+    margin-top: 0 !important;
 }
 
 .header
@@ -73,6 +74,9 @@ ul,ol{
     color: black;
 }
 
+.close, .hamburger{
+    display: none;
+}
 /*Fin header*/
 
 main
@@ -186,17 +190,27 @@ main
 
 .contenedor
 {
+    max-width: 1024px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;/*inherit para heredar*/
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
     padding: 103px 130px;
 }
 .portafolio
 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;/*Separeacion de contenedores*/
-
+    margin: 60px 0px;
 }
+.cajamain
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*1fr que sean del mismo tamaño*/
+    grid-gap: 20px;/*Separeacion de contenedores*/
+}
+
 .caja
 {
     width: 600px;
@@ -222,9 +236,9 @@ main
 
 .servicio
 {
+    margin: 60px 0px;
     background-color: #F4F6F6;
     display: flex;
-    
     align-items: center;
     justify-content: space-between;
 }

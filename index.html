@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css\Mediaquery.css">
 
     <!-- Googlefront -->
 
@@ -16,22 +17,32 @@
     <title>Portafolio</title>
 </head>
 <body>
+    <div class="contenedor">
     <header class="header">
         <div class="logo">
             <img src="assets\Logo.png" alt="Logo">
         </div>
         <nav class="menu">
-            <ul>
+            <ul class="navbar" id="navbar">
                 <!-- li*4>a -->
                 <!-- Difenrecia entre ol y ul, ol numeros y ul puntos-->
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Proyectos</a></li>
                 <li><a href="#">Sobre mi</a></li>
                 <li><a href="#">Contacto</a></li>
+                <a class="close" href="#">
+                    <img src="https://ljc-dev.github.io/testing0/ham-close.svg" alt="close">
+                </a>
             </ul>
+            <a class="hamburger" href="#navbar">
+                <img src="https://ljc-dev.github.io/testing0/ham.svg" alt="menu">
+            </a>
         </nav>
+    </div>
 
     </header>
+
+    <div class="contenedor"></div>
     <main>
         <div class="main-description">
             <h3>Hola soy Farid Ramírez</h3>
@@ -46,6 +57,9 @@
             <img src="assets\Image_hero.png" alt="Imagen dle main">
         </div>
     </main>
+    </div>
+
+    <div class="contenedor">
     <section class = "about">
         <div class="about-img">
             <img src="assets\about.png" alt="imagen Sobre mi">
@@ -59,9 +73,12 @@
                 <a href="assets\CV.docx" download="CV.docx" data-text="Descargar CV">Descargar</a>
             </div>
         </div>
-    <div class="contenedor">
     </section>
+    </div>
+
+    <div class="contenedor">
     <section class="portafolio">
+    <div class="cajamain">
         <div class="about-description portafolio-description">
             <h3>Portafolio</h3>
             <h2>Ver mis proyectos<br>para saber<br>mis habilidades</h2>
@@ -87,6 +104,7 @@
         <div class="caja">
             <img src="projects\pr7.png" alt="Proyecto">
         </div>
+    </div>
     </section>
     </div>
     
@@ -116,7 +134,6 @@
     </section>
     </div>
 
-    
     <footer class="fo-pie">
         <div class="piepag">
             <h1>Ponerse en contacto</h1>
