@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="a">Item 1</div>
+        <div class="b">Item 2</div>
+        <div class="c">Item 3</div>
+        <div class="d">Item 4</div>
+    </div>
+
+    <div class="contenedor1">
+        <div class="A1">Item A</div>
+        <div class="B1">Item B</div>
+        <div class="C1">Item C</div>
+        <div class="D1">Item D</div>
+    </div>
+
+    <style>
+        .contenedor1
+        {
+            display: grid;
+            grid-template-columns: repeat(2,50px 300px);
+            grid-template-rows: repeat(2, 200px 75px);
+        }
+        .A1
+        {
+            background-color: red;
+        }
+        .B1
+        {
+            background-color: blue;
+        }
+        .C1
+        {
+            background-color: pink;
+        }
+        .D1
+        {
+            background-color: orange;
+        }
+        .contenedor
+        {
+            display: grid;
+            grid-template-columns: repeat(2, 100px);/*20px 30px 20px 50px; */
+            grid-template-rows: repeat(2,200px);
+        }
+        .a
+        {
+            background-color: red;
+        }
+        .b
+        {
+            background-color: blue;
+        }
+        .c
+        {
+            background-color: pink;
+        }
+        .d
+        {
+            background-color: orange;
+        }
+    </style>
+    
+</body>
+</html>
